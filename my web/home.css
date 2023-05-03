@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+#video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2; 
+  overflow: hidden;
+}
+
+#video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; 
+  justify-content: center;
+  min-height: 87vh; 
+  background-color: transparent;
+}
+.list {
+  flex: 1;
+  padding: 20px;
+  list-style: none;
+  background-color: black;
+  min-width: 200px;
+  max-width: 200px;
+  margin: 0;
+  margin-top: 10px;
+  background-color: transparent;
+  border-right: 2px solid gray;
+}
+
+.list li {
+  padding: 10px 0;
+  display: flex;
+  margin-right: 10px;
+}
+
+.list li a {
+  color: #333;
+  text-decoration: none;
+  padding: 8px 16px;
+  background-color: lightblue;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.list li:nth-child(2) a {
+  color: black;
+}
+
+.list li a:hover {
+  color: #fff;
+  background-color: lightseagreen;
+}
+
+.main-content {
+  flex: 3;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+  color: white;
+  margin: 0;
+}
+
+h2 {
+  margin-top: 0;
+  color: skyblue;
+}
+
+.intro {
+  margin-top: 30px;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: skyblue;
+}
+
+.intro p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+#project-dropdown {
+  background-color: lightblue;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#project-dropdown option {
+  background-color: lightgoldenrodyellow;
+}
+
+#project-dropdown:hover, #project-dropdown:focus {
+  background-color: lightseagreen;
+}
+
+#project-dropdown option:hover {
+  background-color: green;
+}
+
+/*footer*/
+.footer-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+}

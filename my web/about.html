@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About JavaScript</title>
+    <link rel="stylesheet" href="about.css">
+  </head>
+  <body>
+    <header>
+      <h1>About JavaScript</h1>
+    </header>
+    <div class="container">
+      <ul class="list">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About Javascript</a></li>
+        <li>
+          <select id="project-dropdown">
+            <option value="#">Projects</option>
+            <option value="alertbox.html">Alert Box</option>
+            <option value="project2.html">Loops</option>
+            <option value="project3.html">Array</option>
+          </select>
+        </li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="main-content">
+        <h4>What is JavaScript?</h4>
+        <p>JavaScript is a programming language that is used to create dynamic and interactive websites. It is often referred to as the "language of the web" because it is used to add functionality and interactivity to websites.</p>
+        
+        <h4>What can you do with JavaScript?</h4>
+        <p>With JavaScript, you can create animations, add interactivity to forms and buttons, manipulate HTML and CSS, and much more. It is also used in many popular web frameworks and libraries such as React, Angular, and Vue.</p>
+
+        <h4>Learning JavaScript</h4>
+        <p>If you want to learn JavaScript, there are many resources available online, including tutorials, courses, and documentation. Some popular resources include <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">MDN Web Docs</a>, <a href="https://www.w3schools.com/js/">W3Schools</a>, and <a href="https://www.codecademy.com/learn/introduction-to-javascript">Codecademy</a>.</p>
+      </div>
+    </div>
+        <script>
+      // Get the dropdown element
+      const dropdown = document.getElementById("project-dropdown");
+
+      // Add an event listener for the change event
+      dropdown.addEventListener("change", function() {
+        // Get the selected value
+        const selectedValue = dropdown.value;
+
+        // If the value is not "#" (i.e. not the default option)
+        if (selectedValue !== "#") {
+          // Redirect to the selected page
+          window.location.href = selectedValue;
+        }
+      });
+    </script>
+  </body>
+</html>

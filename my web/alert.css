@@ -1,0 +1,150 @@
+.container {
+  margin-top: -20px;
+}
+
+#alert-btn, .project-btn {
+  padding: 15px 7px;
+  font-size: 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#alert-btn:hover, .project-btn:hover {
+  background-color: #0069d9;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: black;
+  background: linear-gradient(to bottom right, lightpink, skyblue);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 87vh;
+  background-color: transparent;
+}
+
+.list {
+  flex: 1;
+  padding: 20px;
+  list-style: none;
+  background-color: #eee;
+  min-width: 200px;
+  max-width: 200px;
+  margin: 0;
+  margin-top: 10px;
+  background-color: transparent;
+  border-right: 2px solid gray;
+}
+
+.list li {
+  padding: 10px 0;
+  display: flex;
+  margin-right: 10px;
+}
+
+.list li a, .project-btn a {
+  color: #333;
+  text-decoration: none;
+  padding: 8px 16px;
+  background:linear-gradient(to bottom right, lightcyan, lightblue);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.list li a:hover, .project-btn:hover a {
+  background-color: green;
+  color: black;
+}
+
+.list li:nth-child(2) a {
+  color: black;
+}
+
+.list li a{
+  color: black;
+}
+
+.main-content {
+  flex: 3;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+  color: white;
+  margin: 0;
+}
+
+h2 {
+  margin-top: 0;
+  color: black;
+}
+
+.intro {
+  margin-top: 30px;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: skyblue;
+}
+
+.intro p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.alert-container {
+  margin: 20px;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 500px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+.alert-container h2 {
+  color: #333;
+}
+
+.alert-container p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.alert-container button {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.alert-container button:hover {
+  background-color: darkgreen;
+}

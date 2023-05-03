@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JAVASCRIPT WEB</title>
+    <link rel="stylesheet" href="home.css">
+  </head>
+  <body>
+    <header>
+      <h1>JS PROJECT WEBSITE</h1>
+    </header>
+    <div id="video-background">
+      <video autoplay muted loop>
+        <source src="video.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="container">
+      <ul class="list">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About Javascript</a></li>
+        <li>
+          <select id="project-dropdown">
+            <option value="#">Projects</option>
+            <option value="alertbox.html">Alert Box</option>
+            <option value="project2.html">Loops</option>
+            <option value="project3.html">Array</option>
+          </select>
+        </li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="main-content">
+        <h2>Welcome to My Website</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod scelerisque arcu, in gravida nibh fermentum quis. Mauris ac enim vitae eros dapibus facilisis vel nec justo.</p>
+        
+        <div class="intro">
+          <h3>About Javascript</h3>
+          <p>Javascript is a popular programming language used to create dynamic and interactive web pages. It is a client-side scripting language that runs on the user's web browser, and is used to add interactivity, validate user input, and perform other tasks on web pages. It can also be used on the server side with Node.js to create full-stack web applications.</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+  <div class="footer-bottom">
+    <p>&copy; 2023 JS Project Web. All rights reserved.</p>
+  </div>
+</footer>
+    <script>
+      // Get the dropdown element
+      const dropdown = document.getElementById("project-dropdown");
+
+      // Add an event listener for the change event
+      dropdown.addEventListener("change", function() {
+        // Get the selected value
+        const selectedValue = dropdown.value;
+
+        // If the value is not "#" (i.e. not the default option)
+        if (selectedValue !== "#") {
+          // Redirect to the selected page
+          window.location.href = selectedValue;
+        }
+      });
+    </script>
+  </body>
+</html>
